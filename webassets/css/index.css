@@ -1,0 +1,330 @@
+woocommerce .page-header-image-single {
+    display: none
+}
+
+.woocommerce .entry-content,.woocommerce .product .entry-summary {
+    margin-top: 0
+}
+
+.related.products {
+    clear: both
+}
+
+.checkout-subscribe-prompt.clear {
+    visibility: visible;
+    height: initial;
+    width: initial
+}
+
+@media (max-width: 768px) {
+    .woocommerce .woocommerce-ordering,.woocommerce-page .woocommerce-ordering {
+        float:none
+    }
+
+    .woocommerce .woocommerce-ordering select {
+        max-width: 100%
+    }
+
+    .woocommerce ul.products li.product,.woocommerce-page ul.products li.product,.woocommerce-page[class*=columns-] ul.products li.product,.woocommerce[class*=columns-] ul.products li.product {
+        width: 100%;
+        float: none
+    }
+}
+.woocommerce form .form-row .required {
+    visibility: visible
+}
+.generate-page-header,.page-header-image,.page-header-image-single {
+    display: none
+}
+
+.entry-header {
+    display: none
+}
+
+.page-content,.entry-content,.entry-summary {
+    margin-top: 0
+}
+
+body {
+    background-color: #fff;
+    color: #3a3a3a;
+    font-family: "GeneratePress";
+}
+
+a,a:visited {
+    color: #698564
+}
+
+a:hover,a:focus,a:active {
+    color: #000
+}
+
+body .grid-container {
+    max-width: 1100px
+}
+
+.wp-block-group__inner-container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+body,button,input,select,textarea {
+    font-family: "Cormorant Garamond",serif;
+    font-size: 17px
+}
+
+.entry-content>[class*="wp-block-"]:not(:last-child) {
+    margin-bottom: 1.5em
+}
+
+.main-navigation .main-nav ul ul li a {
+    font-size: 14px
+}
+
+h1 {
+    font-family: "Cormorant Garamond",serif;
+    text-transform: uppercase;
+    font-size: 36px
+}
+
+h2 {
+    font-size: 24px
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size:30px
+    }
+
+    h1 {
+        font-size: 30px
+    }
+
+    h2 {
+        font-size: 25px
+    }
+}
+
+.top-bar {
+    background-color: #636363;
+    color: #fff
+}
+
+.top-bar a,.top-bar a:visited {
+    color: #fff
+}
+
+.top-bar a:hover {
+    color: #303030
+}
+
+.site-header {
+    background-color: #fff;
+    color: #3a3a3a
+}
+
+.site-header a,.site-header a:visited {
+    color: #3a3a3a
+}
+
+.main-title a,.main-title a:hover,.main-title a:visited {
+    color: #222
+}
+
+.site-description {
+    color: #757575
+}
+
+.main-navigation,.main-navigation ul ul {
+    background-color: #222
+}
+
+.main-navigation .main-nav ul li a,.menu-toggle {
+    color: #fff
+}
+
+.main-navigation .main-nav ul li:hover>a,.main-navigation .main-nav ul li:focus>a,.main-navigation .main-nav ul li.sfHover>a {
+    color: #fff;
+    background-color: #3f3f3f
+}
+
+button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus {
+    color: #fff
+}
+
+.main-navigation .main-nav ul li[class*="current-menu-"]>a {
+    color: #fff;
+    background-color: #3f3f3f
+}
+
+.main-navigation .main-nav ul li[class*="current-menu-"]>a:hover,.main-navigation .main-nav ul li[class*="current-menu-"].sfHover>a {
+    color: #fff;
+    background-color: #3f3f3f
+}
+
+.navigation-search input[type="search"],.navigation-search input[type="search"]:active,.navigation-search input[type="search"]:focus,.main-navigation .main-nav ul li.search-item.active>a {
+    color: #fff;
+    background-color: #3f3f3f
+}
+
+.main-navigation ul ul {
+    background-color: #3f3f3f
+}
+
+.main-navigation .main-nav ul ul li a {
+    color: #fff
+}
+
+.main-navigation .main-nav ul ul li:hover>a,.main-navigation .main-nav ul ul li:focus>a,.main-navigation .main-nav ul ul li.sfHover>a {
+    color: #fff;
+    background-color: #4f4f4f
+}
+
+.main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+    color: #fff;
+    background-color: #4f4f4f
+}
+
+.main-navigation .main-nav ul ul li[class*="current-menu-"]>a:hover,.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover>a {
+    color: #fff;
+    background-color: #4f4f4f
+}
+
+.separate-containers .inside-article,.separate-containers .comments-area,.separate-containers .page-header,.one-container .container,.separate-containers .paging-navigation,.inside-page-header {
+    background-color: #fff
+}
+
+.entry-meta {
+    color: #595959
+}
+
+.entry-meta a,.entry-meta a:visited {
+    color: #595959
+}
+
+.entry-meta a:hover {
+    color: #1e73be
+}
+
+.sidebar .widget {
+    background-color: #fff
+}
+
+.sidebar .widget .widget-title {
+    color: #000
+}
+
+.footer-widgets {
+    background-color: #fff
+}
+
+.footer-widgets .widget-title {
+    color: #000
+}
+
+.site-info {
+    color: #fff;
+    background-color: #222
+}
+
+.site-info a,.site-info a:visited {
+    color: #fff
+}
+
+.site-info a:hover {
+    color: #606060
+}
+
+.footer-bar .widget_nav_menu .current-menu-item a {
+    color: #606060
+}
+
+input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select {
+    color: #666;
+    background-color: #fafafa;
+    border-color: #ccc
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus {
+    color: #666;
+    background-color: #fff;
+    border-color: #bfbfbf
+}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.button:visited,a.wp-block-button__link:not(.has-background) {
+    color: #fff;
+    background-color: #666
+}
+
+button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover {
+    color: #fff;
+    background-color: #3f3f3f
+}
+
+.generate-back-to-top,.generate-back-to-top:visited {
+    background-color: rgba(0,0,0,.4);
+    color: #fff
+}
+
+.generate-back-to-top:hover,.generate-back-to-top:focus {
+    background-color: rgba(0,0,0,.6);
+    color: #fff
+}
+
+.entry-content .alignwide,body:not(.no-sidebar) .entry-content .alignfull {
+    margin-left: -40px;
+    width: calc(100% + 80px);
+    max-width: calc(100% + 80px)
+}
+
+.rtl .menu-item-has-children .dropdown-menu-toggle {
+    padding-left: 20px
+}
+
+.rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+    padding-right: 20px
+}
+
+@media (max-width: 768px) {
+    .separate-containers .inside-article,.separate-containers .comments-area,.separate-containers .page-header,.separate-containers .paging-navigation,.one-container .site-content,.inside-page-header,.wp-block-group__inner-container {
+        padding:30px
+    }
+
+    .entry-content .alignwide,body:not(.no-sidebar) .entry-content .alignfull {
+        margin-left: -30px;
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px)
+    }
+}
+
+.one-container .sidebar .widget {
+    padding: 0
+}
+
+.page .entry-content {
+    margin-top: 0
+}
+
+@media (max-width: 768px) {
+    .main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder) {
+        display:block
+    }
+
+    .main-navigation ul,.gen-sidebar-nav {
+        display: none
+    }
+
+    [class*="nav-float-"] .site-header .inside-header>* {
+        float: none;
+        clear: both
+    }
+}
+
+@font-face {
+    font-family: "GeneratePress";
+    src: url(https://www.anhieuwedding.com/wp-content/themes/generatepress/fonts/generatepress.eot);
+    src: url("https://www.anhieuwedding.com/wp-content/themes/generatepress/fonts/generatepress.eot#iefix") format("embedded-opentype"),url(https://www.anhieuwedding.com/wp-content/themes/generatepress/fonts/generatepress.woff2) format("woff2"),url(https://www.anhieuwedding.com/wp-content/themes/generatepress/fonts/generatepress.woff) format("woff"),url(https://www.anhieuwedding.com/wp-content/themes/generatepress/fonts/generatepress.ttf) format("truetype"),url("https://www.anhieuwedding.com/wp-content/themes/generatepress/fonts/generatepress.svg#GeneratePress") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
