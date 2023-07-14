@@ -1,0 +1,20 @@
+.footer-box {
+    background-image: url('../../webassets/images/bg-footer.png');
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: #4C4C4C, $alpha: 0.72);
+    }
+    &, a, h4 {
+        color: #fff;
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid $color-primary;
+}
