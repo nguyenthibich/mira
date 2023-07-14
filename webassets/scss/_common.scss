@@ -1,11 +1,19 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     font-size: 15.5px;
     color: #333;
 }
 
+h3 {
+    font-size: 27px;
+}
+
 h4 {
     font-size: 20px;
+}
+
+h5 {
+    font-size: 17px;
 }
 
 a {
@@ -23,4 +31,8 @@ ul {
     li {
         list-style: none;
     }
+}
+
+.container {
+    max-width: 1415px;
 }

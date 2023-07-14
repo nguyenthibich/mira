@@ -1,7 +1,10 @@
 .footer-box {
     background-image: url('../../webassets/images/bg-footer.png');
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 68px 0 62px 0;
+    margin-top: 100px;
     &::before {
         content: '';
         position: absolute;
@@ -17,12 +20,24 @@
     p {
         margin: 0;
         + p {
-            margin-top: 10px;
+            margin-top: 5px;
         }
+    }
+    p, a, .footer-menu-text {
+        line-height: 28px;
+    }
+}
+
+.footer-social-link {
+    padding: 5px 14px;
+    display: inline-block;
+    &:hover {
+        color: $color-primary;
     }
 }
 
 .footer-menu-content {
+    line-height: 30px;
     + .footer-menu-content {
         margin-top: 40px;
     }
@@ -33,6 +48,7 @@
     position: relative;
     z-index: 1;
     padding-top: 30px;
+    margin-top: 50px;
     span {
         text-transform: uppercase;
     }
@@ -43,4 +59,25 @@
 
 .footer-menu-title {
     margin-bottom: 35px;
+}
+
+.footer-menu-icon {
+    width: 36px;
+    i {
+        font-size: 17px;
+        line-height: 23px;
+        width: 17px;
+        text-align: center;
+    }
+}
+
+.footer-menu-text {
+    flex: 1;
+    max-width: 290px;
+}
+
+.footer-menu-item {
+    + .footer-menu-item {
+        margin-top: 15px;
+    }
 }
