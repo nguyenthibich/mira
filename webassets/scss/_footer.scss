@@ -3,8 +3,12 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 68px 0 62px 0;
-    margin-top: 100px;
+    padding: 40px 0;
+    margin-top: 50px;
+   @media all and (min-width: 1280px){
+       margin-top: 100px;
+       padding: 68px 0 62px 0;
+   }
     &::before {
         content: '';
         position: absolute;
@@ -47,18 +51,37 @@
     border-top: 1px solid $color-primary;
     position: relative;
     z-index: 1;
-    padding-top: 30px;
-    margin-top: 50px;
+    padding-top: 20px;
+    margin-top: 30px;
+    @media all and (min-width: 576px){
+        margin-top: 50px;
+        padding-top: 30px;
+    }
     span {
         text-transform: uppercase;
     }
     .footer-social-list {
-        margin-left: 52px;
+        @media all and (min-width: 768px){
+            margin-left: 30px;
+        }
+        @media all and (min-width: 1024px){
+            margin-left: 52px;
+        }
+        @media all and (max-width: 576px){
+            justify-content: center;
+            width: 100%;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
 
 .footer-menu-title {
     margin-bottom: 35px;
+    @media all and (max-width: 576px){
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .footer-menu-icon {
@@ -78,6 +101,19 @@
 
 .footer-menu-item {
     + .footer-menu-item {
-        margin-top: 15px;
+        margin-top: 5px;
+        @media all and (min-width: 576px){
+            margin-top: 15px;
+        }
+    }
+}
+
+.footer-menu {
+    [class*="col-md-"] {
+        +  [class*="col-md-"] {
+            @media all and (max-width: 768px) {
+                margin-top: 30px;
+            }
+        }
     }
 }

@@ -1,0 +1,24 @@
+.breadcrumb-box {
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1280px){
+    padding-bottom: 15px;
+    &:not(.breadcrumb-box-sm) {
+      font-size: 20px;
+      border-bottom: 1px solid $color-primary;
+      margin-top: -5px;
+    }
+  }
+  .breadcrumb-item {
+    color: #000;
+    + .breadcrumb-item {
+      margin-left: 2px;
+      padding-left: 2px;
+    }
+    a {
+      color: $color-primary;
+      padding-left: 2px;
+    }
+  }
+}

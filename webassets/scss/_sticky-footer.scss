@@ -1,23 +1,36 @@
 .footer-sticky {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #EDEDED;
-  padding: 30px 0 35px 0;
+  padding: 20px 0;
   z-index: 100;
+  @media all and (max-width: 767px){
+    display: none;
+  }
+  @media all  and (min-width: 1280px){
+    padding: 30px 0 35px 0;
+  }
 }
 
 .footer-sticky-item {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 60px;
+  max-height: 60px;
+  @media all  and (min-width: 1280px){
+    max-width: 80px;
+    max-height: 80px;
+  }
   + .footer-sticky-item {
     margin-left: 45px;
   }
 }
 
 .footer-sticky-title {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  @media all  and (min-width: 1024px){
+    margin-bottom: 20px;
+  }
 }
 
 .footer-sticky-list {
@@ -25,17 +38,29 @@
 }
 
 .footer-sticky-price {
-  max-width: 240px;
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  @media all and (min-width: 1024px){
+    max-width: 240px;
+    display: block;
+  }
 }
 
 .footer-sticky-action {
-  max-width: 330px;
+
   text-align: center;
   margin-top: 10px;
+  @media all and (min-width: 1024px){
+    max-width: 330px;
+  }
 }
 
 .footer-sticky-link {
-  margin-top: 30px;
+  margin-top: 10px;
   display: inline-flex;
+  @media all and (min-width: 1024px){
+    margin-top: 30px;
+  }
 }

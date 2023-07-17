@@ -22,5 +22,18 @@
 
 .btn-lg {
   @extend h4;
-  height: 56px;
+  height: 45px;
+  @media all and (min-width: 1024px){
+    height: 56px;
+  }
+}
+
+.btn-md {
+  @extend h6;
+  height: 45px;
+  min-width: 200px;
+  font-weight: normal;
+  @media all and (min-width: 1024px){
+    height: 48px;
+  }
 }

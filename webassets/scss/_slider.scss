@@ -3,10 +3,13 @@
 }
 
 .swiper-pagination {
-    height: 65px;
+    height: 40px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    @media all and (min-width: 1280px){
+        height: 65px;
+    }
 }
 
 .swiper-pagination-bullet {
