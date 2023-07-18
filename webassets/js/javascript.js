@@ -180,5 +180,46 @@ if(swiperContainer5) {
     swiperContainer5.style.height = maxHeight5 + "px";
 }
 
+var swiper = new Swiper(".product-hot-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 22,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 22,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 22,
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    },
+});
+var slideImages6 = document.querySelectorAll(
+    ".product-hot-swiper .swiper-slide .swiper-content"
+);
+var maxHeight6 = 0;
+slideImages6.forEach(function (image) {
+    if (image.offsetHeight > maxHeight6) {
+        maxHeight6 = image.offsetHeight;
+    }
+});
+
+var swiperContainer6 = document.querySelector(".product-hot-swiper");
+if(swiperContainer6) {
+    swiperContainer6.style.height = maxHeight6 + heightPagination + "px";
+}
+
 
 

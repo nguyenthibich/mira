@@ -34,15 +34,19 @@
                     </div>
                 </div>
                 <div class="header-logo">
-                    <a href="#" class="header-logo-images">
-                        <img src="../webassets/images/logo copy.png"/>
+                    <a href="#" class="header-logo-images d-inline-block">
+                        <img src="../webassets/images/icon/logo111.png" class="d-none d-md-block" width="220"/>
+                        <img src="../webassets/images/icon/logo-b.png" class="d-md-none" width="250"/>
                     </a>
                 </div>
-                <div class="header-card">
+                <div class="header-card d-none d-md-inline-block">
                     <a href="#" class="header-card-link d-flex">
                         <span>Giỏ hàng của bạn</span>
                         <img src="../webassets/images/icon/xa-day-hang.png" class=""/>
                     </a>
+                </div>
+                <div class="toggle-box d-md-none">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
 
@@ -83,12 +87,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="swiper-content">
-                                        <img src="../webassets/images/detail/banner-my-pham-01.jpg">
+                                        <img src="../webassets/images/detail/banner-my-pham-01.jpg" class="w-100">
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="swiper-content">
-                                        <img src="../webassets/images/detail/banner-my-pham-01.jpg">
+                                        <img src="../webassets/images/detail/banner-my-pham-01.jpg" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -101,6 +105,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="product-detail-right">
                     <ul class="breadcrumb-box d-flex">
                         <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
@@ -111,13 +116,13 @@
 
                     <div class="product-detail-des">
                         <h1 class="product-detail-title">Cánh én mùa xuân</h1>
-                        <p class="mb-2">Với thiết kế gập ba giả phong bì cùng các phụ kiện đi kèm như band, tag, dây cói… Tất cả như gói ghém lại một chuyện tình đẹp, sự trân trọng của bạn gửi tới người thân, bạn bè. Và người được mời sẽ háo hức khám phá chuyện tình ấy qua từng bước tay lật mở.</p>
+                        <p class="mb-0">Với thiết kế gập ba giả phong bì cùng các phụ kiện đi kèm như band, tag, dây cói… Tất cả như gói ghém lại một chuyện tình đẹp, sự trân trọng của bạn gửi tới người thân, bạn bè. Và người được mời sẽ háo hức khám phá chuyện tình ấy qua từng bước tay lật mở.</p>
                         <p class="mb-0">Almira đang thật mong chờ được nghe câu chuyện tình yêu của các bạn, được cùng các bạn gói trọn yêu thương.</p>
                     </div>
 
                     <div class="product-detail-info">
                         <h4 class="font-weight-400 product-detail-info-title mb-0">Mã sản phẩm | AW-A0002</h4>
-                        <div class="d-flex product-detail-info-content">
+                        <div class="d-flex align-items-end product-detail-info-content">
                             <div class="d-flex star-box align-items-center">
                                 <div class="star-list text-primary">
                                     <i class="fas fa-star"></i>
@@ -142,31 +147,532 @@
                         </div>
                     </div>
 
-                    <div class="product-detail-list">
-                        <div class="product-detail-item">
-
+                    <div class="d-flex align-items-center action-list justify-content-between">
+                        <div class="action-item">
+                        <span class="action-images">
+                            <img src="../webassets/images/icon/bang-ve.png" width="40" />
+                        </span>
+                            <span class="action-content">Chỉnh sửa <br>theo yêu cầu</span>
+                        </div>
+                        <div class="action-item">
+                        <span class="action-images">
+                            <img src="../webassets/images/icon/may-in.png" />
+                        </span>
+                            <span class="action-content">In mẫu <br>miễn phí</span>
+                        </div>
+                        <div class="action-item">
+                        <span class="action-images">
+                            <img src="../webassets/images/icon/xa-tai.png" />
+                        </span>
+                            <span class="action-content">Giao hàng <br>toàn quốc</span>
                         </div>
                     </div>
 
+                    <div class="product-detail-list">
+                        <div class="product-detail-item">
+                            <h5>
+                                <span>SỐ LƯỢNG</span>
+                                <span class="font-weight-400 note">(Lựa chọn bắt buộc)</span>*
+                            </h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">(Tổng số lượng thiệp cần in)</span>
+                                            <div class="d-flex align-items-center justify-content-end">
+                                                <input type="text" class="input-text w-50">
+                                                <span>Thiệp</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">100</li>
+                                    <li class="dropdown-item">200</li>
+                                    <li class="dropdown-item">300</li>
+                                    <li class="dropdown-item">400</li>
+                                    <li class="dropdown-item">500</li>
+                                    <li class="dropdown-item">600</li>
+                                    <li class="dropdown-item">700</li>
+                                    <li class="dropdown-item">800</li>
+                                    <li class="dropdown-item">900</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--SỐ LƯỢNG-->
+
+                        <div class="product-detail-item">
+                            <h5><span>LOẠI GIẤY</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-lg text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <div class="dropdown-images d-flex">
+                                                <span>
+                                                    <img src="../webassets/images/detail/img-6.jpg" alt="" width="" height="" style="border: 1px solid rgba(0,0,0,.25)">
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex justify-content-end h-100">
+                                                <div class="text-right content-type">
+                                                    <h6 class="mb-1">Giấy Cream tiêu chuẩn 230gsm </h6>
+                                                    <p class="mb-0">gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-6.jpg" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>Giấy Cream tiêu chuẩn</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-6.jpg" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>Giấy Cream tiêu chuẩn</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--LOẠI GIẤY-->
+
+                        <div class="product-detail-item">
+                            <h5><span>PHONG BÌ</span></h5>
+                            <div class="dropdown-box position-relative">
+                            <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                    <div class="d-flex w-100 align-items-center justify-content-end">
+                                        <h4 class="mb-0 font-weight-400 flex-grow-1">Đã bao gồm</h4>
+                                        <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                    </div>
+                                </div>
+                                <div class="transition-fast">
+                                    <i class="fal fa-chevron-down"></i>
+                                </div>
+                            </div>
+
+                            <ul class="dropdown-list">
+                                <li class="dropdown-item">
+                                    <div class="d-flex w-100 align-items-center justify-content-end">
+                                        <span class="flex-grow-1">Đã bao gồm</span>
+                                        <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <div class="d-flex w-100 align-items-center justify-content-end">
+                                        <span class="flex-grow-1">Không bao gồm</span>
+                                        <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                        <!--PHONG BÌ-->
+
+                        <div class="product-detail-item">
+                            <h5><span>Mặt trước</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <div class="dropdown-images d-flex">
+                                                <span>
+                                                    <img src="../webassets/images/detail/img-1.png" alt="" width="" height="" style="box-shadow: 2px 2px 8px #999">
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex justify-content-end h-100">
+                                                <div class="text-right content-type">
+                                                    <h5 class="mb-1">AW-A0001.PB_mat_truoc_2</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-1.png" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>AW-A0001.PB_mat_truoc_2</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-1.png" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>AW-A0001.PB_mat_truoc_2</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Mặt trước-->
+
+                        <div class="product-detail-item">
+                            <h5><span>Mặt sau</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <div class="dropdown-images d-flex">
+                                                <span>
+                                                    <img src="../webassets/images/detail/img-2.png" alt="" width="" height="" style="box-shadow: 2px 2px 8px #999">
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex justify-content-end h-100">
+                                                <div class="text-right content-type">
+                                                    <h5 class="mb-1">AW-A0001.PB_mat_sau_2</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-2.png" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>AW-A0001.PB_mat_sau_1</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-2.png" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>AW-A0001.PB_mat_sau_22</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Mặt sau-->
+
+                        <div class="product-detail-item">
+                            <h5><span>Mặt trong</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <div class="dropdown-images d-flex">
+                                                <span>
+                                                    <img src="../webassets/images/detail/img-3.png" alt="" width="" height="" style="box-shadow: 2px 2px 8px #999">
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1 d-flex justify-content-end h-100">
+                                                <div class="text-right content-type">
+                                                    <h5 class="mb-1">AW-A0001.PB_mat_trong_22</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-3.png" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>AW-A0001.PB_mat_trong_1</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="card-box d-flex justify-content-between">
+                                            <div class="card-images">
+                                                <img src="../webassets/images/detail/img-3.png" alt="" width="" height="" class="w-100">
+                                            </div>
+                                            <div class="card-content flex-grow-1">
+                                                <h6>AW-A0001.PB_mat_trong_2</h6>
+                                                <p>gồm 1 mặt nhám và 1 mặt trơn lì giá thành hợp lý, màu sắc in đẹp</p>
+                                                <ul class="content-list">
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                    <li class="content-item">Twist, Lock Mount compatible</li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-price">+50</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Mặt trong-->
+
+                        <div class="product-detail-item">
+                            <h5><span>THIỆP CHÍNH</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <h4 class="mb-0 font-weight-400 flex-grow-1">Đã bao gồm</h4>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Đã bao gồm</span>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Không bao gồm</span>
+                                            <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--THIỆP CHÍNH-->
+
+                        <div class="product-detail-item">
+                            <h5><span>THIỆP PHỤ</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <h4 class="mb-0 font-weight-400 flex-grow-1">Đã bao gồm</h4>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Đã bao gồm</span>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Không bao gồm</span>
+                                            <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--THIỆP PHỤ-->
+
+                        <div class="product-detail-item">
+                            <h5><span>ĐAI THIỆP</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <h4 class="mb-0 font-weight-400 flex-grow-1">Đã bao gồm</h4>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Đã bao gồm</span>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Không bao gồm</span>
+                                            <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--ĐAI THIỆP-->
+
+                        <div class="product-detail-item">
+                            <h5><span>DẤU SÁP NIÊM PHONG</span></h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <h4 class="mb-0 font-weight-400 flex-grow-1">không bao gồm</h4>
+                                            <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Đã bao gồm</span>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Không bao gồm</span>
+                                            <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--DẤU SÁP NIÊM PHONG-->
+
+                        <div class="product-detail-item">
+                            <h5>
+                                <span>THIỆP MỜI ONLINE</span>
+                                <img src="../webassets/images/icon/dien-thoai.png" width="28"/>
+                            </h5>
+                            <div class="dropdown-box position-relative">
+                                <div class="d-flex w-100 dropdown-toggle dropdown-input dropdown-input-sm text-left justify-content-between align-items-center cursor-pointer pointer-none-all">
+                                    <div class="d-flex flex-grow-1 align-items-center pointer-none">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <h4 class="mb-0 font-weight-400 flex-grow-1">Đã bao gồm</h4>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="transition-fast">
+                                        <i class="fal fa-chevron-down"></i>
+                                    </div>
+                                </div>
+
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Đã bao gồm</span>
+                                            <i class="fal fa-check-circle dropdown-icon dropdown-check"></i>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <div class="d-flex w-100 align-items-center justify-content-end">
+                                            <span class="flex-grow-1">Không bao gồm</span>
+                                            <i class="fal fa-times-circle dropdown-icon dropdown-close"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--THIỆP MỜI ONLINE-->
+                    </div>
+
                     <div class="suggest-box">
-                        <h4 class="suggest-title text-primary font-weight-500">Gợi ý cho bạn</h1>
-                        <p class="mb-2">Mẫu thông tin cần điền để in thiệp cưới </p>
+                        <h4 class="suggest-title text-primary font-weight-500">Gợi ý cho bạn</h4>
+                        <p class="mb-1">Mẫu thông tin cần điền để in thiệp cưới </p>
                         <p class="mb-0">(bạn có thể thực hiện việc này sau khi hoàn tất đặt hàng)</p>
                     </div>
                 </div>
 
-                <div class="product-detail-left">
+                <div class="product-detail-content-box">
                     <div class="product-detail-content">
                         <h6>QUY TRÌNH ĐẶT HÀNG VÀ XỬ LÝ ĐƠN HÀNG</h6>
                         <p class="mb-1">Điều khoản và điều kiện đặt hàng</p>
-                        <p class="mb-4">1. Đặt hàng, đơn hàng, giao hàng</p>
-                        <p class="mb-4">– Khi đặt hàng, quý khách vui lòng cung cấp đầy đủ các thông tin cần thiết mà An Hieu Wedding yêu cầu để An Hieu Wedding xác nhận & căn cứ theo đó để phục vụ quý khách hàng một cách tốt nhất. Tất cả trường hợp cung cấp thiếu thông tin hoặc thông tin sai sự thật, An Hieu Wedding có toàn quyền không giải quyết những đơn hàng đó và không hoàn trả bất cứ một khoản tiền đã đặt cọc nào của quý khách.</p>
-                        <p class="mb-4">– Việc đặt hàng được chấp nhận qua 02 hình thức: Đặt hàng trực tuyến thông qua website: https://anhieu.wedding hoặc đặt hàng thông qua Facebook. Đặt hàng trực tiếp tại showroom và các chi nhánh nhượng quyền của An Hieu Wedding.</p>
-                        <p class="mb-4">– Đặt hàng chỉ được xác nhận và thực hiện đơn hàng khi An Hieu Wedding nhận được khoản đặt cọc hoặc thanh toán đối với đơn hàng của quý khách. (Đơn hàng bao gồm: Xác nhận đặt hàng, gửi Phiếu thông tin, thực hiện thiết kế, xác nhận thiết kế, sản xuất & duyệt mẫu, sản xuất số lượng lớn & giao hàng).</p>
-                        <p class="mb-4">– Các chương trình khuyến mãi chỉ áp dụng đối với đơn đặt hàng tại thời điểm đó. Quý khách vui lòng kiểm tra số lượng cần sử dụng và xác nhận số lượng để được khuyến mãi trên đơn hàng. Mọi phát sinh sau khi đơn hàng đã thực hiện sẽ không được áp dụng bất cứ một hình thức khuyến mãi nào. Thông thường, khách hàng nên cộng khoảng 5% số lượng đặt hàng để dự phòng phát sinh cũng như dự phòng sai sót khi viết thiệp cũng như các sai sót do yếu tố bên ngoài.</p>
-                        <p class="mb-4">– Thời gian thực hiện đơn hàng: Theo cam kết mà An Hieu Wedding đã thông báo đến với khách hàng. – Các đơn hàng phải đặt cọc hoặc thanh toán 100% khi thực hiện đặt hàng (tuỳ theo chính sách thời điểm và chương trình khuyến mãi áp dụng). Các đơn hàng đã đặt hàng sẽ không được hoàn trả khoản đặt cọc một khi đơn hàng đã được bắt đầu thiết kế (kể cả trong trường hợp đơn hàng chưa được sản xuất). Trong trường hợp đơn hàng chỉ vừa được đặt & chưa tiến hành thiết kế mà khách hàng có ý muốn huỷ đơn hàng, An Hieu Wedding sẽ gửi trả toàn bộ khoản đặt cọc cho khách hàng (không bao gồm phí chuyển tiền qua ngân hàng).</p>
-                        <p class="mb-4">– Giao hàng: Cước phí vận chuyển sẽ phụ thuộc vào chương trình ưu đãi khi khách hàng đặt cọc ở An Hiếu. Hình thức giao hàng là chuyển phát tiêu chuẩn bằng các nhà vận chuyển (Bên thứ 3). An Hiếu hợp tác với các nhà vận chuyển sau: Viettel Post, 24/7… Ngoài ra, đối với các đơn hàng tại các vị trí địa lý mà An Hiếu nhận thấy có hình thức giao hàng vận chuyển khác (xe khách, xe tour, tàu hoả…) mang lại thời gian giao hàng ngắn hơn, An Hiếu sẽ sử dụng hình thức vận chuyển đó để gửi hàng cho khách hàng và sẽ thông báo cho khách hàng các vận đơn, thời gian dự kiến nhận hàng và địa điểm nhận hàng. Khách hàng sẽ đến địa điểm nhận hàng để nhận hàng. Tuy nhiên bất cứ hình thức vận chuyển nào cũng đều do chính khách hàng lựa chọn và xác nhận trước khi gửi hàng.</p>
-                        <p class="mb-4">2. Chất lượng in & thành phẩm</p>
+                        <p class="mb-content">1. Đặt hàng, đơn hàng, giao hàng</p>
+                        <p class="mb-content">– Khi đặt hàng, quý khách vui lòng cung cấp đầy đủ các thông tin cần thiết mà An Hieu Wedding yêu cầu để An Hieu Wedding xác nhận & căn cứ theo đó để phục vụ quý khách hàng một cách tốt nhất. Tất cả trường hợp cung cấp thiếu thông tin hoặc thông tin sai sự thật, An Hieu Wedding có toàn quyền không giải quyết những đơn hàng đó và không hoàn trả bất cứ một khoản tiền đã đặt cọc nào của quý khách.</p>
+                        <p class="mb-content">– Việc đặt hàng được chấp nhận qua 02 hình thức: Đặt hàng trực tuyến thông qua website: https://anhieu.wedding hoặc đặt hàng thông qua Facebook. Đặt hàng trực tiếp tại showroom và các chi nhánh nhượng quyền của An Hieu Wedding.</p>
+                        <p class="mb-content">– Đặt hàng chỉ được xác nhận và thực hiện đơn hàng khi An Hieu Wedding nhận được khoản đặt cọc hoặc thanh toán đối với đơn hàng của quý khách. (Đơn hàng bao gồm: Xác nhận đặt hàng, gửi Phiếu thông tin, thực hiện thiết kế, xác nhận thiết kế, sản xuất & duyệt mẫu, sản xuất số lượng lớn & giao hàng).</p>
+                        <p class="mb-content">– Các chương trình khuyến mãi chỉ áp dụng đối với đơn đặt hàng tại thời điểm đó. Quý khách vui lòng kiểm tra số lượng cần sử dụng và xác nhận số lượng để được khuyến mãi trên đơn hàng. Mọi phát sinh sau khi đơn hàng đã thực hiện sẽ không được áp dụng bất cứ một hình thức khuyến mãi nào. Thông thường, khách hàng nên cộng khoảng 5% số lượng đặt hàng để dự phòng phát sinh cũng như dự phòng sai sót khi viết thiệp cũng như các sai sót do yếu tố bên ngoài.</p>
+                        <p class="mb-content">– Thời gian thực hiện đơn hàng: Theo cam kết mà An Hieu Wedding đã thông báo đến với khách hàng. – Các đơn hàng phải đặt cọc hoặc thanh toán 100% khi thực hiện đặt hàng (tuỳ theo chính sách thời điểm và chương trình khuyến mãi áp dụng). Các đơn hàng đã đặt hàng sẽ không được hoàn trả khoản đặt cọc một khi đơn hàng đã được bắt đầu thiết kế (kể cả trong trường hợp đơn hàng chưa được sản xuất). Trong trường hợp đơn hàng chỉ vừa được đặt & chưa tiến hành thiết kế mà khách hàng có ý muốn huỷ đơn hàng, An Hieu Wedding sẽ gửi trả toàn bộ khoản đặt cọc cho khách hàng (không bao gồm phí chuyển tiền qua ngân hàng).</p>
+                        <p class="mb-content">– Giao hàng: Cước phí vận chuyển sẽ phụ thuộc vào chương trình ưu đãi khi khách hàng đặt cọc ở An Hiếu. Hình thức giao hàng là chuyển phát tiêu chuẩn bằng các nhà vận chuyển (Bên thứ 3). An Hiếu hợp tác với các nhà vận chuyển sau: Viettel Post, 24/7… Ngoài ra, đối với các đơn hàng tại các vị trí địa lý mà An Hiếu nhận thấy có hình thức giao hàng vận chuyển khác (xe khách, xe tour, tàu hoả…) mang lại thời gian giao hàng ngắn hơn, An Hiếu sẽ sử dụng hình thức vận chuyển đó để gửi hàng cho khách hàng và sẽ thông báo cho khách hàng các vận đơn, thời gian dự kiến nhận hàng và địa điểm nhận hàng. Khách hàng sẽ đến địa điểm nhận hàng để nhận hàng. Tuy nhiên bất cứ hình thức vận chuyển nào cũng đều do chính khách hàng lựa chọn và xác nhận trước khi gửi hàng.</p>
+                        <p class="mb-content">2. Chất lượng in & thành phẩm</p>
                         <p>An Hiếu sử dụng dây chuyền in Kỹ thuật số hiện đại được cung cấp bởi Fuji Xerox.. An Hiếu cũng là thành viên của Hiệp hội đối tác cấp cao toàn cầu của Fuji Xerox. Chất lượng in luôn đảm bảo độ sắc nét & màu sắc theo tiêu chuẩn in kỹ thuật số. Tuy nhiên bản in thật có thể khác biệt với màu sắc trên màn hình máy tính và khác khi so sánh với các kỹ thuật in khác (in Offset, in lụa…). Mọi vấn đề về bản in sẽ được An Hieu Wedding thông báo đến quý khách hàng nếu An Hieu Wedding nhận thấy có những sự sai</p>
                     </div>
                 </div>
@@ -254,7 +760,6 @@
                             </div>
                         </div>
 
-
                         <div class="swiper-slide">
                             <div class="swiper-content customer-suggest-item">
                                 <div class="customer-suggest-content">
@@ -280,7 +785,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="swiper-slide">
                             <div class="swiper-content customer-suggest-item">
@@ -639,7 +1143,7 @@
         <div class="footer-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-12">
                         <h4 class="footer-menu-title">SHOW ROOM</h4>
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item d-flex">
@@ -669,7 +1173,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-12">
                         <h4 class="footer-menu-title">GIỜ MỞ CỬA</h4>
                         <div class="footer-menu-content">
                             <p class="footer-menu-content-item">Thứ hai - Thứ sáu</p>
@@ -684,7 +1188,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-12">
                         <h4 class="footer-menu-title">HƯỚNG DẪN VÀ HỖ TRỢ</h4>
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item d-flex">
@@ -705,7 +1209,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-12">
+                    <div class="col-lg-3 col-md-6 col-12">
                         <h4 class="footer-menu-title">CHÍNH SÁCH VÀ THÔNG TIN</h4>
                         <ul class="footer-menu-list">
                             <li class="footer-menu-item d-flex">
@@ -732,9 +1236,9 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="d-flex">
-                            <span>Theo dõi Almira</span>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <span class="d-none d-md-block">Theo dõi Almira</span>
                             <ul class="footer-social-list d-flex">
                                 <li class="footer-social-item">
                                     <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
@@ -757,8 +1261,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <p class="footer-copy text-right">Copyright 2023 Thiệp cưới Almira</p>
+                    <div class="col-md-6">
+                        <p class="footer-copy text-md-right text-center">Copyright 2023 Thiệp cưới Almira</p>
                     </div>
                 </div>
             </div>
@@ -784,7 +1288,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="d-flex">
+                    <div class="d-block d-md-flex">
                         <div class="footer-sticky-price">
                             <h5 class="footer-sticky-title">TỔNG THANH TOÁN</h5>
                             <h3 class="footer-sticky-number mb-0">350.000 VNĐ</h3>

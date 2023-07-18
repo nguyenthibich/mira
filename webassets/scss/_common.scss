@@ -8,35 +8,61 @@ body {
     }
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 22px;
     @media all and (min-width: 1280px) {
         font-size: 25px;
     }
 }
 
-h3 {
+h2,
+.h2 {
+    font-size: 22px;
+    @media all and (min-width: 1280px) {
+        font-size: 22px;
+    }
+}
+
+h3,
+.h3 {
     font-size: 27px;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 14px;
     @media all and (min-width: 1280px) {
         font-size: 20px;
     }
 }
 
-h5 {
+h5,
+.h5 {
     font-size: 14px;
     @media all and (min-width: 1280px) {
         font-size: 17px;
     }
 }
 
-h6 {
+h6,
+.h6 {
     font-size: 14px;
     @media all and (min-width: 1280px) {
         font-size: 16px;
+    }
+}
+
+.col-sm-6 {
+    @media (min-width: 576px) and (max-width: 768px){
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.d-sm-none {
+    @media screen and (min-width: 767px){
+        display: none;
     }
 }
 
