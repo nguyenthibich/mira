@@ -18,6 +18,12 @@
   &:visited {
     color: #fff;
   }
+  &.disabled {
+    background-color: #D7D8D9;
+    opacity: 1;
+    color: #000;
+    cursor: no-drop;
+  }
 }
 
 .btn-lg {

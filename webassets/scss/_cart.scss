@@ -6,21 +6,26 @@
         left: 0;
         top: 0;
         height: 100%;
-        width: 50%;
+        width: 55%;
         background-color: #F6F6F6;
-        border-left: 1px solid $color-primary;
+        border-right: 1px solid $color-primary;
     }
 }
 
 .cart-main {
     z-index: 9;
     position: relative;
+    flex-wrap: wrap;
 }
 
-.cart-left,
+.cart-left {
+    width: 55%;
+    padding-right: 45px;
+}
+
 .cart-right {
-    padding: 40px;
-    width: 50%;
+    width: 45%;
+    padding-left: 45px;
 }
 
 .cart-item-images {
@@ -71,6 +76,7 @@
 }
 
 .cart-top-mobile {
+    margin-top: 180px;
     @media screen and (max-width: 576px) {
         background-color: #E5E5E5;
         height: 90px;
@@ -95,31 +101,42 @@
 
 .cart-form {
     border-bottom: 1px solid $color-primary;
+    margin-top: 35px;
 }
 
 .form-group {
     label {
         line-height: 1.0;
         @media screen and (min-width: 1280px) {
-           font-size: 22px;
+        //    font-size: 22px;
            margin-bottom: 15px; 
+           font-size: 20px;
         }
     }
     .form-input {
         border: 0.75px solid #7F7F7F;
         border-radius: 9px;
-        height: 51px;
         width: 100%;
         padding: 0 18px;
-        font-size: 20px;
         margin-bottom: 18px;
+        height: 40px;
         &::placeholder {
             color: #777;
         }
+        @media screen and (min-width: 1280px) {
+            font-size: 20px;
+            height: 51px;
+        }
+        &:hover,
+        &:focus {
+            border-color: $color-primary;
+        }
     }
     .form-check {
-        font-size: 20px;
         display: flex;
+        @media screen and (min-width: 1280px) {
+            font-size: 18px;
+        }
     }
     .row {
         margin-left: -9px;
@@ -137,5 +154,45 @@
 }
 
 .card-form-item {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+}
+
+.cart-form-bottom {
+    margin-top: 30px;
+}
+
+.cart-form-bottom-link {
+    i {
+        color: $color-primary;
+        margin-right: 10px;
+    }
+}
+
+.cart-menu-list {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    border-top: 1px solid $color-primary;
+}
+
+.cart-menu-link {
+    @media screen and (min-width: 1280px) {
+        font-size: 17px;
+    }
+}
+
+.cart-code-form {
+    gap: 40px;
+}
+
+.cart-page {
+    @media screen and (min-width: 1024px){
+        .header-box,
+        .footer-box {
+            display: none;
+        }
+    }
+    .cart-main {
+        padding-top: 100px;
+    }
 }
