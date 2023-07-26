@@ -188,9 +188,10 @@
         font-size: 15px;
         &::placeholder {
             color: #777;
+            font-style: italic;
         }
         @media screen and (min-width: 1280px) {
-            font-size: 20px;
+            font-size: 18px;
             height: 51px;
             margin-bottom: 18px;
         }

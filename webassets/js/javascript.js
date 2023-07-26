@@ -1,3 +1,5 @@
+var windowWidth = jQuery(window).width();
+
 $(document).ready(function () {
     $('.dropdown-toggle').click(function() {
         $(this).parent().toggleClass('active');
@@ -11,6 +13,15 @@ $(document).ready(function () {
         const breadcrumbHeight = $('.product-breadcrumbs .breadcrumb-box').height() + 60;
         $('.product-left').toggleClass('show').css('top', breadcrumbHeight);
     });
+
+    const toggleButtons = $('.header-menu-toggle');
+
+    toggleButtons.click(function() {
+        if(windowWidth <= 1024) {
+            const menuItem = $(this).closest('.header-menu-item');
+            menuItem.toggleClass('active');
+        }
+    })
 });
 
 var heightPagination = document.querySelector('.swiper-pagination')?.offsetHeight;
@@ -83,7 +94,6 @@ slideImages1.forEach(function (image) {
 });
 var swiperContainer1 = document.querySelector(".swiper-2row");
 
-var windowWidth = jQuery(window).width();
 if(swiperContainer1) {
     if(windowWidth >= 768) {
         swiperContainer1.style.height = maxHeight1 * 2 + heightPagination + 80 + "px";
