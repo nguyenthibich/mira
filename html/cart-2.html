@@ -77,7 +77,7 @@
     </div>
 
     <div class="main-content">
-        <div class="cart-container">
+        <div class="cart-container bg-transparent">
             <div class="container">
                 <div class="cart-main d-flex">
                     <div class="cart-left">
@@ -159,45 +159,50 @@
                             <div class="card-form-item">
                                 <div class="form-group">
                                     <label class="form-label w-100">Thông tin liên lạc</label>
-                                    <input type="text" class="form-input" placeholder="Email hoặc Số điện thoại"/>
-                                </div>
-    
-                                <div class="form-group">
-                                    <label class="form-label form-check">
-                                        <input type="checkbox" class="form-input-check" />
-                                        Luôn cập nhật cho tôi về mẫu thiệp mới và các ưu đãi độc quyền
-                                    </label>
+                                    <div class="form-label-static d-flex align-items-center justify-content-between">
+                                        <div class="form-label-left flex-grow-1 mr-1">
+                                            <p class="form-label-note">Liên hệ</p>
+                                            <p class="form-label-txt">Nguyễn Trúc Linh</p>
+                                        </div>
+                                        <a href="#" class="form-label-link">Thay đổi</a>
+                                    </div>
+
+                                    <div class="form-label-static d-flex align-items-center justify-content-between">
+                                        <div class="form-label-left flex-grow-1 mr-1">
+                                            <p class="form-label-note">Địa chỉ</p>
+                                            <p class="form-label-txt">35 Giải Phóng, Hai Bà Trưng, Hà Nội, 100000</p>
+                                        </div>
+                                        <a href="#" class="form-label-link">Thay đổi</a>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="card-form-item">
                                 <div class="form-group">
-                                    <label class="form-label w-100">Thông tin thanh toán</label>
-                                    <input type="text" class="form-input" placeholder="Quốc gia"/>
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-6">
-                                            <input type="text" class="form-input" placeholder="Họ"/>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6">
-                                            <input type="text" class="form-input" placeholder="Đệm và Tên"/>
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-input" placeholder="Địa chỉ"/>
-                                    <input type="text" class="form-input" placeholder="Phường xã, Quận, Huyện"/>
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-6">
-                                            <input type="text" class="form-input" placeholder="Thành phố"/>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6">
-                                            <input type="text" class="form-input" placeholder="Mã bưu chính"/>
-                                        </div>
+                                    <label class="form-label w-100">Thẻ quà tặng hoặc mã giảm giá</label>
+                                    <div class="form-group d-flex cart-code-form w-100">
+                                        <span class="flex-grow-1">
+                                            <input type="text" placeholder="Thẻ quà tặng hoặc mã giảm giá" class="form-input mb-0">
+                                        </span>
+                                        <a href="#" class="btn btn-primary btn-md disabled w-auto">Áp dụng</a>
                                     </div>
                                 </div>
-    
+                            </div>
+
+                            <div class="card-form-item">
                                 <div class="form-group">
-                                    <label class="form-label form-check">
-                                        <input type="checkbox" class="form-input-check" />
-                                        Lưu thông tin này cho lần sau
+                                    <label class="form-label w-100">Thanh toán</label>
+                                    <p class="h4 form-note font-weight-400">Tất cả các giao dịch đều được mã hóa và bảo mật</p>
+
+                                    <label class="form-radio">
+                                        <input type="radio" id="pay-1" name="pay" value="pay-1" checked>
+                                        <span class="form-radio-icon"></span>
+                                        <span>Thu tiền khi giao hàng (COD)</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" id="pay-2" name="pay" value="pay-2">
+                                        <span class="form-radio-icon"></span>
+                                        <span>Thu tiền khi giao hàng (COD)</span>
                                     </label>
                                 </div>
                             </div>
@@ -206,9 +211,9 @@
                         <div class="d-flex cart-form-bottom">
                             <a href="#" class="d-flex align-items-center flex-grow-1 h4 mb-0 font-weight-400 cart-form-bottom-link">
                                 <i class="fal fa-chevron-left"></i>
-                                Trở lại giỏ hàng
+                                Quay lại thông tin
                             </a>
-                            <a href="#" class="btn btn-primary disabled w-auto btn-md">THANH TOÁN</a>
+                            <a href="#" class="btn btn-primary disabled w-auto btn-lg btn-finished">HOÀN TẤT ĐẶT HÀNG</a>
                         </div>
                     </div>
 
