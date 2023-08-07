@@ -513,6 +513,9 @@ input:focus {
       padding-top: 30px; } }
   .footer-bottom span {
     text-transform: uppercase; }
+    @media screen and (max-width: 576px) {
+      .footer-bottom span {
+        display: none; } }
   @media all and (min-width: 768px) {
     .footer-bottom .footer-social-list {
       margin-left: 30px; } }
@@ -525,6 +528,9 @@ input:focus {
       width: 100%;
       font-size: 20px;
       margin-bottom: 20px; } }
+  @media screen and (max-width: 576px) {
+    .footer-bottom .footer-copy {
+      text-align: center !important; } }
 
 .footer-menu-title {
   margin-bottom: 35px; }
@@ -1245,6 +1251,46 @@ input:focus {
       padding-left: 17px;
       padding-right: 17px; }
 
+.introduce-box {
+  padding: 60px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4eee1;
+  margin-bottom: 40px;
+  display: block; }
+  @media screen and (min-width: 1280px) {
+    .introduce-box {
+      min-height: 404px;
+      padding: 0; }
+      .introduce-box:before, .introduce-box:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-repeat: no-repeat; }
+      .introduce-box::before {
+        left: 30;
+        background-image: url("../images/product-list/img-4.png");
+        width: 524px; }
+      .introduce-box::after {
+        right: 30px;
+        width: 503px;
+        background-image: url("../images/product-list/img-5.png"); } }
+  .introduce-box .container {
+    max-width: 515px;
+    text-align: center; }
+
+.introduce-images {
+  width: 101px;
+  margin-bottom: 33px;
+  display: inline-block; }
+
+.introduce-title {
+  font-weight: 500;
+  margin-bottom: 25px; }
+
 .cart-container {
   position: relative; }
   @media all and (min-width: 1024px) {
@@ -1435,6 +1481,10 @@ input:focus {
 
 .cart-form-bottom {
   margin-top: 30px; }
+  @media screen and (max-width: 576px) {
+    .cart-form-bottom {
+      flex-wrap: wrap;
+      gap: 20px; } }
 
 .cart-form-bottom-link i {
   color: #F2881D;

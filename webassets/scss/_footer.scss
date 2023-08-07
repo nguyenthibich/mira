@@ -59,6 +59,9 @@
     }
     span {
         text-transform: uppercase;
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
     }
     .footer-social-list {
         @media all and (min-width: 768px){
@@ -72,6 +75,12 @@
             width: 100%;
             font-size: 20px;
             margin-bottom: 20px;
+        }
+    }
+
+    .footer-copy {
+        @media screen and (max-width:576px) {
+            text-align: center !important;
         }
     }
 }

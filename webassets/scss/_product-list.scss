@@ -268,3 +268,52 @@
     }
   }
 }
+
+.introduce-box {
+ padding: 60px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4eee1;
+  margin-bottom: 40px;
+  display: block;
+  @media screen and (min-width: 1280px) {
+    min-height: 404px;
+    padding: 0;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+    }
+    &::before {
+      left: 30;
+      background-image: url('../images/product-list/img-4.png');
+      width: 524px;
+    }
+    &::after {
+      right: 30px;
+      width: 503px;
+      background-image: url('../images/product-list/img-5.png');
+    }
+  }
+  
+  .container {
+    max-width: 515px;
+    text-align: center;
+  }
+}
+
+.introduce-images {
+  width: 101px;
+  margin-bottom: 33px;
+  display: inline-block;
+}
+
+.introduce-title {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
